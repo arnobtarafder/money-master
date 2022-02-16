@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money manager</title>
+    <!-- css stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap css stylesheet  -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Poppins:ital,wght@0,100;0,300;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-center mt-4" id="header-name">Money Manager</h1>
+    </header>
+
+    <main class="container row-cols-auto">
+        <section class="d-flex">
+            <div class="me-5 d-grid col-6 row-cols-auto">
+                <div class="">
+                    <img class="rounded img-fluid d-grid" height="350" src="https://images.unsplash.com/photo-1547341074-c5e9b0f9c335?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80" alt="">    
+                </div>
+            </div>
+
+            <div class="d-grid col-6 align-items-center justify-content-center">
+                <!-- Income section is here  -->
+                <h3 class="text-center">Income</h3>
+                <div class="d-flex align-items-center">
+                <h5 class="Income me-4">Income</h5>
+                <input type="number" name="" id="income-input">
+                </div>
+                
+                <!-- Expenses section starts here  -->
+                <h2 class="text-center">Expenses</h2>
+                <div class="d-flex align-items-center">
+                    <h5 class="me-4">Food</h5>
+                    <input type="number" name="" id="food-input" class="ms-3">
+                </div>
+                
+                <div class="d-flex mt-4 align-items-center">
+                    <h5 class="me-4">Rent</h5>
+                    <input type="number" name="" id="rent-input" class="ms-4">
+                </div>
+                
+                <div class="d-flex mt-4 align-items-center">
+                    <h5 class="me-4">Clothes</h5>
+                    <input type="number" name="" id="clothes-input">
+                </div>
+
+                <div class="d-flex mt-4 align-items-center mb-4">
+                    <h5 class="me-4">Others</h5>
+                    <input type="number" name="" id="others-input" class="ms-2">
+                </div>
+                
+                <button class="btn btn-primary" type="submit" value="Submit" id="calculate-button" class="">Calculate</button>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- javascript stylesheet  -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
