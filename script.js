@@ -29,20 +29,20 @@ document.getElementById('calculate-button').addEventListener("click", function (
    const remainingBalance = income - totalCost ;
    ///-------- Balance calculate-----///
 
-   
+
   
 //-------------- error handeling ---------------///
    const expense = document.getElementById ('total-expenses-text')
    const expenseFloat = parseFloat (expense.innerText);
 
-   const PresentValance = document.getElementById('balance-text');
-   const innertext = parseFloat (PresentValance.innerText);
+   const PresentBalance = document.getElementById('balance-text');
+   const innertext = parseFloat (PresentBalance.innerText);
    
    
-   if(isNaN(income) || isNaN(clothes) || isNaN (rent) || isNaN(food)){
+   if(isNaN(income) || isNaN(clothes) || isNaN (rent) || isNaN(food) || isNaN(others)){
     alert ("Please! give a valid value / number") ;
 }
-    else if(income < 0 || clothes < 0 || rent < 0 || food < 0){
+    else if(income < 0 || clothes < 0 || rent < 0 || food < 0 || others < 0){
     alert ("plese! input a positive value");
 }
     else if(remainingBalance < 0){
@@ -53,7 +53,7 @@ document.getElementById('calculate-button').addEventListener("click", function (
     
     expense.innerText = totalCost ;
 
-    PresentValance.innerText = remainingBalance; 
+    PresentBalance.innerText = remainingBalance; 
 
  }
    ///---------- error handling and making website more special end here -----------///
@@ -65,35 +65,21 @@ document.getElementById('calculate-button').addEventListener("click", function (
 
    ///------------ saving amount counting start from here--------------///
 
- document.getElementById ('saving-button').addEventListener ("click", function () {
-
-
+ document.getElementById ('save-button').addEventListener ("click", function () {
+console.log("successfully clicked");
     const get = document.getElementById('saving-text');
-    const getInText = get.innerText ;
-    const convertNumber = parseFloat (getInText);
+    const getInrText = get.innerText ;
+    const convertNumber = parseFloat (getInrText);
 
 
-    const savingperchant = inputId ('saving-button')
+    const savingPerchant = inputId ('saving-input')
     const income = inputId ('income-input')
 
  
-  if ( savingperchant > 0 && income > savingperchant ){
-    const perchant =( income / 100 ) * savingperchant ;
-    get.innerText = perchant ;
-  }
-
-   else if ( savingperchant > income ) {
-      alert ( "Your saving amount is bigger then your Income")
-  }
-  
-  else if ( savingperchant < 0 ) {
-      alert ('input a positve number')
-  }
-
-  else {
-      alert ("please! give a valid number and check again")
-  }
-
+  if ( savingPerchant > 0 && income > savingPerchant ){
+    const perchant = ( income * savingPerchant ) / 100 ;
+    get.innerText = perchant;
+    console.log(get);
     const getShowingBalance = document.getElementById("balance-text");
     const getAmountInnerText = getShowingBalance.innerText ;
     const convertShowBalanceAmount = parseFloat (getAmountInnerText) ;
@@ -101,7 +87,7 @@ document.getElementById('calculate-button').addEventListener("click", function (
 
     const getSaveAmount = document.getElementById("saving-text");
     const getAmountText = getSaveAmount.innerText ;
-    const convertSaveAmount = parseFloat (getAmountText) ;
+    const convertSaveAmount = parseFloat(getAmountText) ;
 
     const mainBalance = convertShowBalanceAmount - convertSaveAmount   ;
 
@@ -110,6 +96,37 @@ document.getElementById('calculate-button').addEventListener("click", function (
     const convertRemaining = parseFloat (remainingText) ;
 
     getRemaining.innerText = mainBalance ;
+
+  }
+
+   else if ( savingPerchant > income ) {
+      alert ( "Your saving amount is bigger then your Income")
+  }
+  
+  else if ( savingPerchant < 0 ) {
+      alert ('input a positve number')
+  }
+
+  else {
+      alert ("please! give a valid number and check again")
+  }
+
+    // const getShowingBalance = document.getElementById("balance-text");
+    // const getAmountInnerText = getShowingBalance.innerText ;
+    // const convertShowBalanceAmount = parseFloat (getAmountInnerText) ;
+
+
+    // const getSaveAmount = document.getElementById("saving-text");
+    // const getAmountText = getSaveAmount.innerText ;
+    // const convertSaveAmount = parseFloat(getAmountText) ;
+
+    // const mainBalance = convertShowBalanceAmount - convertSaveAmount   ;
+
+    // const getRemaining = document.getElementById("remaining-balance-text");
+    // const remainingText = getRemaining.innerText ;
+    // const convertRemaining = parseFloat (remainingText) ;
+
+    // getRemaining.innerText = mainBalance ;
 
 
 
