@@ -1,4 +1,3 @@
-
 function inputId (id) {
     const totalInput = document.getElementById(id);
     const getValue= totalInput.value;
@@ -118,8 +117,18 @@ else {
     else{
         getRemaining.innerText = finalBalance ;
     }
-
-
-
  })
+
+
+
+//   color changing button 
+ let changeColor   = document.getElementById('Color'),
+       colors      = ['#000048', '#B5C7A4', 'rgb(255, 226, 231)', '#A4DADA', 'rgb(04, 93, 185)'];
+ let   colorIndex  = 0;
+
+ changeColor.addEventListener('click', () => {
+   document.body.style.backgroundColor = colors[colorIndex];      
+   colorIndex = (colorIndex + 1) % colors.length
+ });
+
 
