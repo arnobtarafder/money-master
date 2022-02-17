@@ -1,41 +1,3 @@
-// <!-- <form class="col" id="form-full"> -->
-//                 <!-- Income section is here  -->
-//                 <!-- <h3 class="text-center">Income</h3>
-
-//                 <div class="d-flex align-items-center">
-//                 <label class="Income me-4">Income</label>
-//                 <input type="number" name="" id="income-input">
-//                 </div> -->
-                
-//                 <!-- Expenses section starts here  -->
-//                 <!-- <h2 class="text-center">Expenses</h2>
-//                 <div class="d-flex align-items-center">
-//                     <label class="me-4">Food</label>
-//                     <input type="number" name="" id="food-input" class="ms-3">
-//                 </div>
-                
-//                 <div class="d-flex mt-4 align-items-center">
-//                     <label class="me-4">Rent</label>
-//                     <input type="number" name="" id="rent-input" class="ms-4">
-//                 </div>
-                
-//                 <div class="d-flex mt-4 align-items-center">
-//                     <label class="me-4">Clothes</label>
-//                     <input type="number" name="" id="clothes-input">
-//                 </div>
-
-//                 <div class="d-flex mt-4 align-items-center mb-4">
-//                     <label class="me-4">Others</label>
-//                     <input type="number" name="" id="others-input" class="ms-2">
-//                 </div>
-                
-//                 <div class="mx-auto">
-//                 <button class="btn btn-primary" type="submit" value="Submit" id="calculate-button" class="px-lg-4">Calculate</button>
-//                 </div>
-//             </form> -->
-
-
-
 
             // food
     // const foodInput = document.getElementById("food-input");
@@ -57,3 +19,86 @@
     // const othersInputText = othersInput.value;
     // const othersFloat = parseFloat(othersInputText,3)
 //  const otherCost = getInputValue("others-input");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function getInputValue(inputId) {
+//     const Input = document.getElementById(inputId);
+//     const amountText = Input.value;
+//     // const incomeAmount = parseFloat(incomeInput).value;
+//     const amount = parseFloat(amountText);
+//      // clear incomeInput
+//     // incomeInput.value = "";
+//     return amount;
+
+// }
+
+// function savingAmount(percentage) {
+//     const incomeAmount = getInputValue("income-input");
+//     const sav
+// }
+
+// document.getElementById("calculate-button").addEventListener("click", function () {
+//     const incomeAmount = getInputValue("income-input")
+
+//     // get income without expense
+//     let justBalance = document.getElementById("balance-text");
+//     // console.log(justBalance);
+//     const justBalanceText = justBalance.innerText;
+//     justBalance.innerText = incomeAmount;
+
+//     // clear incomeInput
+//     // incomeInput.value = "";
+// })
+
+// document.getElementById("calculate-button").addEventListener("click", function () {
+//     // food
+//     const foodCost = getInputValue("food-input")
+//     // rent 
+//     const rentCost = getInputValue("rent-input")
+//     // clothes
+//     const clothesCost = getInputValue("clothes-input");
+//     // others
+//     const otherCost = getInputValue("others-input");
+
+//     // update expense total
+//     const expenseTotal = document.getElementById("total-expenses-text");
+//     const expenseTotalText = expenseTotal.innerText;
+//  // expenseTotal.innerText = foodFloat + rentFloat + clothesFloat + othersFloat;
+//     expenseTotal.innerText = parseFloat(foodCost) + parseFloat(rentCost) + parseFloat(clothesCost) + parseFloat(otherCost);
+
+//     // update balance after payment of total expenses
+//     const balanceTotal = document.getElementById("income-input");
+//     const balanceTotalText = parseFloat(balanceTotal).value;
+//     // getInputValue()
+//     console.log(balanceTotalText);
+//     balanceTotal.innerText =  parseFloat(balanceTotalText) - parseFloat(expenseTotal);
+
+//     // clear food total input
+//     // foodCost.value = "";
+// })
