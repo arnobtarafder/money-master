@@ -44,7 +44,7 @@ document.getElementById('calculate-button').addEventListener("click", function (
     alert ("your number isn't valid or input all type of costs") ;
 }
 else if ( income < 0 || clothes < 0 || rent < 0 || food < 0 || others < 0) {
-    alert ("plese input an positive number");
+    alert ("plese input a positive number");
 }
 else if ( finalBalance < 0 ) {
     alert("Your cost is bigger then your Income");
