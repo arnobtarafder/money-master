@@ -41,7 +41,7 @@ document.getElementById('calculate-button').addEventListener("click", function (
    
    
    if ( isNaN(income) || isNaN(clothes) || isNaN (rent) || isNaN(food) || isNaN(others) ) {
-    alert ("your number isn't valid") ;
+    alert ("your number isn't valid or input all type of costs") ;
 }
 else if ( income < 0 || clothes < 0 || rent < 0 || food < 0 || others < 0) {
     alert ("plese input an positive number");
