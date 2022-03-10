@@ -1,13 +1,13 @@
 function inputId (id) {
     const totalInput = document.getElementById(id);
-    const getValue= totalInput.value;
+    const getValue = totalInput.value;
     const amount = parseFloat (getValue);
     return amount ;
     
 }
 
 
-// butoon working field start from here //
+// button working field start from here //
 
 document.getElementById('calculate-button').addEventListener("click", function () {
 
@@ -23,16 +23,16 @@ document.getElementById('calculate-button').addEventListener("click", function (
 
 
    const totalCost = clothes + rent + food + others;
-    /// -----cost calculate ---------///
+    /// ----------cost calculate ---------///
 
    const finalBalance = income - totalCost ;
-   ///-------- Balance calculate-----///
+   ///-------- Balance calculate --------///
 
 //                                     //
 
-   /// ----------%&&%-------------///
+// -------------------- %&&% --------------------///
 
-//------------  error handeling starts here  ------------//
+//-----------  error handeling starts here  -----------//
    const expense = document.getElementById ('expense-amount')
    const gettext = parseFloat (expense.innerText);
 
@@ -68,24 +68,24 @@ else {
 
 
     const get = document.getElementById('save-amount');
-    const getInrText = get.innerText ;
-    const convertNumber = parseFloat (getInrText);
+    const getInnerText = get.innerText ;
+    const convertNumber = parseFloat (getInnerText);
 
 
-    const savingsPerchant = inputId ('saving-input')
+    const savingsPercentage = inputId ('saving-input')
     const income = inputId ('income-input')
 
 //------------  error handling starts here  --------------//
-  if ( savingsPerchant > 0 && income > savingsPerchant ){
-    const perchant =( income / 100 ) * savingsPerchant ;
-    get.innerText = perchant ;
+  if ( savingsPercentage > 0 && income > savingsPercentage ){
+    const percentage = ( income / 100 ) * savingsPercentage ;
+    get.innerText = percentage ;
   }
 
-   else if ( savingsPerchant > income ) {
+   else if ( savingsPercentage > income ) {
       alert ( "Your saving amount is bigger then your income")
   }
   
-   else if ( savingsPerchant < 0 ) {
+   else if ( savingsPercentage < 0 ) {
       alert ('input a positve number')
   }
 
@@ -96,8 +96,8 @@ else {
 
 
 
-    const getshowblnc = document.getElementById("balance-amount");
-    const getiamountinnertext = getshowblnc.innerText ;
+    const getshowbalance = document.getElementById("balance-amount");
+    const getiamountinnertext = getshowbalance.innerText ;
     const convertshowblncamount = parseFloat (getiamountinnertext) ;
 
 
@@ -109,7 +109,7 @@ else {
 
     const getRemaining = document.getElementById("remaining-balance");
     const remainingText = getRemaining.innerText ;
-    const converremaining = parseFloat (remainingText) ;
+    const convertRemaining = parseFloat (remainingText) ;
 
     if(finalBalance < 0) {
         alert("sorry! your saving amount is greater than your balance after all costs")
